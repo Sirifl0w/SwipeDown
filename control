@@ -1,0 +1,9 @@
+Package: com.sirifl0w.swipedown
+Name: SwipeDown
+Depends: mobilesubstrate, firmware (>= 7.0)
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Swipe down to kill apps in app switcher.
+Maintainer: Sirifl0w <sirifl0w@gmail.com>
+Author: Sirifl0w <sirifl0w@gmail.com>
+Section: Tweaks
