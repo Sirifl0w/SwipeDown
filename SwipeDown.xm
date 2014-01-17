@@ -32,8 +32,8 @@
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(struct CGPoint)arg2 targetContentOffset:(CGPoint)arg3 {
 
-		SBUIController *sharedUI = [%c(SBUIController) sharedInstance];
-		SBAppSliderController *appSliderCont = [sharedUI _appSliderController];
+	SBUIController *sharedUI = [%c(SBUIController) sharedInstance];
+	SBAppSliderController *appSliderCont = [sharedUI _appSliderController];
 
         // arbitrary offset, try to match that of the swipe up gesture. Alter for sensitivity change.
         
@@ -41,7 +41,7 @@
 
             UIScrollView *sliderScroller = MSHookIvar<UIScrollView *>(self, "_scrollView");
 			// Determine the location of the gesture.
-  			CGPoint swipeLocation = [sliderScroller.panGestureRecognizer locationInView:sliderScroller];
+  		    CGPoint swipeLocation = [sliderScroller.panGestureRecognizer locationInView:sliderScroller];
         	NSUInteger currentIndex = swipeLocation.x / sliderScroller.frame.size.width;
 
         if (currentIndex != 0) {
