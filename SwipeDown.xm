@@ -40,8 +40,9 @@
         if (scrollView.contentOffset.y < -40) {
 
             UIScrollView *sliderScroller = MSHookIvar<UIScrollView *>(self, "_scrollView");
-			// Determine the location of the gesture.
-  		    CGPoint swipeLocation = [sliderScroller.panGestureRecognizer locationInView:sliderScroller];
+			
+        // Determine the location of the gesture.
+            CGPoint swipeLocation = [sliderScroller.panGestureRecognizer locationInView:sliderScroller];
         	NSUInteger currentIndex = swipeLocation.x / sliderScroller.frame.size.width;
 
         if (currentIndex != 0) {
