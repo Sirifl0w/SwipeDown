@@ -43,7 +43,7 @@
 			
             // Determine the location of the gesture.
             CGPoint swipeLocation = [sliderScroller.panGestureRecognizer locationInView:sliderScroller];
-        	NSUInteger index = [[self valueForKey:@"_items"] indexOfObject:scrollView];
+            NSUInteger index = [[self valueForKey:@"_items"] indexOfObject:scrollView];
 
         if (index != 0) {
             for (UIView *pageView in sliderScroller.subviews) {
